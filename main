@@ -1,0 +1,18 @@
+def minion_game(string):
+    kevin_points = 0
+    stuart_points = 0
+    for i in range(len(s)):
+        if s[i] in ['A', 'E', 'I', 'O', 'U']:
+            kevin_points += len(s) - i
+        else:
+            stuart_points += len(s) - i
+
+    if kevin_points > stuart_points:
+        print(f"Kevin {kevin_points}")
+    elif kevin_points < stuart_points:
+        print(f"Stuart {stuart_points}")
+    else:
+        print('Draw')
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
